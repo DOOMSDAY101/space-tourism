@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+  background-image: url("../Images/assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../Images/assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("../Images/assets/home/background-home-mobile.jpg");
+  }
+}

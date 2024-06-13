@@ -1,0 +1,168 @@
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 10px 0 10px 40px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.logo-link {
+  margin-right: 50px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.line {
+  width: 500px;
+  height: 1px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.nav-bar {
+  font-size: 15px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(40px);
+  padding: 13px 10px 13px 90px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+.nav-num {
+  font-weight: 700;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+  position: relative;
+}
+.close-btn {
+  display: none;
+}
+.nav-bar a::before {
+  content: "";
+  position: absolute;
+  top: 180%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.nav-bar a:hover::before {
+  width: 100%;
+}
+.harmburger {
+  display: none;
+}
+@media screen and (max-width: 1070px) {
+  .nav-bar {
+    padding: 13px 20px 13px 70px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .line {
+    width: 350px;
+  }
+  .nav-bar {
+    padding: 13px 10px 13px 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .line {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line {
+    display: none;
+  }
+  .nav-bar {
+    width: 100%;
+    height: 100%;
+    padding: 13px 10px 13px 20px;
+  }
+  .header {
+    padding: 0 0 0 40px;
+  }
+  .nav-bar a::before {
+    top: 240%;
+  }
+}
+@media screen and (max-width: 598px) {
+  .header {
+    padding: 0 0 0 20px;
+  }
+  .nav-bar a {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 507px) {
+  .nav-bar {
+    font-size: 13px;
+    padding: 13px 0px 13px 0;
+  }
+  .header {
+    padding: 0 0 0 20px;
+  }
+  .nav-bar a {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 20px;
+  }
+  .nav-bar {
+    height: 100vh;
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    right: 0;
+    width: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 120px 0 0 0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    width: 70%;
+  }
+  .nav-bar a {
+    margin: 0 0 30px 30px;
+  }
+  .nav-bar-a {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+  .nav-bar-a.active {
+    opacity: 1;
+  }
+  .nav-bar a::before {
+    display: none;
+  }
+  .harmburger {
+    display: block;
+    cursor: pointer;
+  }
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
