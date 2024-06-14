@@ -142,5 +142,6 @@ body {
     width: 130px;
     height: 130px;
     font-size: 16px;
+    cursor: none;
   }
 }
