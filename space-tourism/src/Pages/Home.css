@@ -5,6 +5,115 @@ body {
   background-size: cover;
   background-position: center;
 }
+.home-page-content {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 100px 100px 100px;
+}
+.home-page-text {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  max-width: 390px;
+  color: #d0d6f9;
+  height: 230px;
+  justify-content: space-between;
+}
+.text-travel-1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.text-travel-2 {
+  font-weight: 400;
+  line-height: 25px;
+}
+.text-travel-h1 {
+  font-family: "Bellefair";
+  color: #fff;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.display-button {
+  width: 320px;
+  max-width: 320px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore {
+  font-family: "Bellefair";
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #0b0d17;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.explore::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+.explore:hover {
+  transform: scale(0.9);
+}
+
+.explore:hover::before {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 1;
+}
+@media screen and (max-width: 950px) {
+  .home-page-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .home-page-text {
+    width: 400px;
+    max-width: 400px;
+    text-align: center;
+  }
+  .text-travel-1 {
+    font-size: 17px;
+  }
+  .text-travel-2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .text-travel-h1 {
+    font-size: 95px;
+  }
+  .display-button {
+    height: 150px;
+    margin-top: 40px;
+  }
+  .explore {
+    width: 150px;
+    height: 150px;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     background-image: url("../Images/assets/home/background-home-tablet.jpg");
@@ -14,5 +123,23 @@ body {
 @media screen and (max-width: 375px) {
   body {
     background-image: url("../Images/assets/home/background-home-mobile.jpg");
+  }
+  .home-page-text {
+    width: 300px;
+    max-width: 300px;
+  }
+  .text-travel-1 {
+    font-size: 14px;
+  }
+  .text-travel-2 {
+    font-size: 15px;
+  }
+  .text-travel-h1 {
+    font-size: 75px;
+  }
+  .explore {
+    width: 130px;
+    height: 130px;
+    font-size: 16px;
   }
 }

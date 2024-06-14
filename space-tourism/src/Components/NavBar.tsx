@@ -25,16 +25,16 @@ function NavBar() {
           <img src={CloseBtn} alt="close button" />
         </div>
         <div className={`${"nav-bar-a"} ${isNavBarOpened ? "active" : ""}`}>
-          <Link to="/">
+          <Link to="/" onClick={toggleMobileNav}>
             <span className="nav-num">00</span> &nbsp;&nbsp; HOME
           </Link>
-          <Link to="/">
+          <Link to="/" onClick={toggleMobileNav}>
             <span className="nav-num">01</span> &nbsp;&nbsp; DESTINATION
           </Link>
-          <Link to="/">
+          <Link to="/" onClick={toggleMobileNav}>
             <span className="nav-num">02</span> &nbsp;&nbsp; CREW
           </Link>
-          <Link to="/">
+          <Link to="/" onClick={toggleMobileNav}>
             <span className="nav-num">03</span> &nbsp;&nbsp; TECHNOLOGY
           </Link>
         </div>
