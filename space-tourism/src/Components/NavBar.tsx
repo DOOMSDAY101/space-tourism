@@ -6,7 +6,7 @@ import Menu from "../Images/menu.png";
 import CloseBtn from "../Images/Close.png";
 
 function NavBar() {
-  let [isNavBarOpened, setIsNavBarOpened] = useState(false);
+  let [isNavBarOpened, setIsNavBarOpened] = useState<boolean>(false);
 
   function toggleMobileNav(): void {
     setIsNavBarOpened(!isNavBarOpened);

@@ -60,8 +60,20 @@ body {
   font-weight: 400;
   cursor: pointer;
   position: relative;
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
   user-select: none;
+  animation: bounce 1.7s linear infinite;
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 .explore::before {
   content: "";
