@@ -1,0 +1,240 @@
+.destinaton-page {
+  min-height: 100vh;
+  background-image: url("../Images/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pick-destination {
+  padding: 30px 100px;
+}
+.pick-destination-h1 {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.pick-destination-span {
+  opacity: 0.5;
+  margin-right: 10px;
+}
+.destination-location {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.image-destination {
+  width: 320px;
+  height: 320px;
+  margin-left: 30px;
+  position: relative;
+  animation: bounce 1.7s linear infinite;
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.image-details {
+  width: 600px;
+  height: 400px;
+}
+.image-options {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.options-select {
+  cursor: pointer;
+  margin-right: 35px;
+  position: relative;
+}
+.options-select::before {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.options-select.selected::before {
+  width: 100%;
+}
+.options-select:hover::before {
+  width: 100%;
+}
+.selected-h1 {
+  font-family: "Bellefair";
+  color: #fff;
+  font-size: 87px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.options-desc {
+  width: 350px;
+  line-height: 22px;
+  color: #d0d6f9;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.divider {
+  width: 350px;
+  height: 1px;
+  background-color: #979797;
+  opacity: 0.5;
+  margin: 30px 0 10px 0;
+}
+.distance-duration {
+  display: flex;
+}
+.distance {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.distance h3 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #d0d6f9;
+  font-weight: 400;
+  line-height: 30px;
+}
+.distance h2 {
+  font-family: "Bellefair";
+  font-weight: 100;
+  font-size: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .pick-destination {
+    padding: 30px 60px;
+  }
+  .image-details {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .image-details {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .destination-location {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .image-destination {
+    width: 180px;
+    height: 180px;
+    margin-left: 0px;
+  }
+  .pick-destination {
+    padding: 20px 0 0 50px;
+  }
+  .pick-destination-h1 {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .image-details {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .image-options {
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .options-select {
+    text-align: center;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .selected-h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+  .options-desc {
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .divider {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .destinaton-page {
+    background-image: url("../Images/assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .image-destination {
+    width: 140px;
+    height: 140px;
+  }
+  .pick-destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0px;
+  }
+  .selected-h1 {
+    font-size: 50px;
+  }
+  .pick-destination-h1 {
+    margin-bottom: 20px;
+  }
+  .options-desc {
+    width: 300px;
+    line-height: 20px;
+    color: #d0d6f9;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .distance-duration {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .distance {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .divider {
+    width: 300px;
+    margin: 20px 0 10px 0;
+  }
+  .distance h2 {
+    font-family: "Bellefair";
+    font-weight: 100;
+    font-size: 23px;
+  }
+  .destinaton-page {
+    background-image: url("../Images/assets/destination/background-destination-mobile.jpg");
+  }
+}

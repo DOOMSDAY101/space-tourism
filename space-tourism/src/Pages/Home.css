@@ -64,6 +64,9 @@ body {
   user-select: none;
   animation: bounce 1.7s linear infinite;
 }
+.display-button a {
+  text-decoration: none;
+}
 @keyframes bounce {
   0% {
     top: 0px;

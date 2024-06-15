@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,7 +19,9 @@ function Home() {
           </p>
         </div>
         <div className="display-button">
-          <div className="explore">EXPLORE</div>
+          <Link to="/destination">
+            <div className="explore">EXPLORE</div>
+          </Link>
         </div>
       </div>
     </div>

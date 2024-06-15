@@ -28,7 +28,7 @@ function NavBar() {
           <Link to="/" onClick={toggleMobileNav}>
             <span className="nav-num">00</span> &nbsp;&nbsp; HOME
           </Link>
-          <Link to="/" onClick={toggleMobileNav}>
+          <Link to="/destination" onClick={toggleMobileNav}>
             <span className="nav-num">01</span> &nbsp;&nbsp; DESTINATION
           </Link>
           <Link to="/" onClick={toggleMobileNav}>
