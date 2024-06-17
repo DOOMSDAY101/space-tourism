@@ -59,6 +59,9 @@
 .nav-bar a:hover::before {
   width: 100%;
 }
+.nav-bar a.selected::before {
+  width: 100%;
+}
 .harmburger {
   display: none;
 }

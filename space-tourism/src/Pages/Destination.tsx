@@ -98,7 +98,7 @@ function Destination() {
                   <h3>AVG. DISTANCE</h3>
                   <h2>{selectedOption.distance}</h2>
                 </div>
-                <div className="distance">
+                <div className="distance" id="no-margin">
                   <h3>EST. TRAVEL TIME</h3>
                   <h2>{selectedOption.duration}</h2>
                 </div>

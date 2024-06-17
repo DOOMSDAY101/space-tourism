@@ -136,6 +136,9 @@
   .destination-location {
     margin-top: 10px;
     flex-direction: column;
+    /* background-color: red; */
+    margin: 20px auto 0 auto;
+    width: fit-content;
   }
   .image-destination {
     width: 180px;
@@ -181,6 +184,14 @@
   }
   .divider {
     margin: 20px 0 10px 0;
+  }
+  .distance-duration {
+    font-display: flex;
+    justify-content: center;
+    width: fit-content;
+  }
+  #no-margin {
+    margin-right: 0;
   }
 }
 
