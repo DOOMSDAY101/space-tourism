@@ -1,0 +1,160 @@
+.crew-page {
+  min-height: 100vh;
+  background-image: url("../Images/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.crew {
+  padding: 30px 100px 0 100px;
+}
+.crew-details-img {
+  padding: 80px 100px 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crew-details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+.crew-details-section h2 {
+  color: #ffffff;
+  font-family: "Bellefair";
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.crew-details-section h1 {
+  color: #ffffff;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.crew-details-section p {
+  color: #d0d6f9;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 470px;
+}
+.dots {
+  display: flex;
+  gap: 20px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #979797;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active-dot {
+  background-color: #fff;
+}
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.image-section img {
+  max-width: 400px;
+  height: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+.image-section img:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1100px) {
+  .crew {
+    padding: 30px 70px 0 70px;
+  }
+  .crew-details-img {
+    padding: 80px 70px 0px 70px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .crew {
+    padding: 0px 0 0 50px;
+  }
+  .crew-details-img {
+    padding: 20px 0 0px 0;
+    flex-direction: column;
+  }
+  .crew-details-section {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    width: 460px;
+    margin-bottom: 40px;
+  }
+  .crew-details-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .crew-details-section h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .crew-details-section p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .image-section img {
+    max-width: 285px;
+    height: 285px;
+    transition: none;
+  }
+  .image-section img:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .crew-page {
+    background-image: url("../Images/assets/crew/background-crew-tablet.jpg");
+  }
+  .crew {
+    padding: 20px 0 0 50px;
+  }
+  .image-section img {
+    max-width: 265px;
+    height: 265px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .crew-page {
+    background-image: url("../Images/assets/crew/background-crew-mobile.jpg");
+  }
+  .image-section img {
+    max-width: 220px;
+    height: 220px;
+  }
+  .crew-details-section {
+    height: 230px;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .crew-details-section h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .crew-details-section h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .crew-details-section p {
+    font-size: 14px;
+    width: 100%;
+  }
+}

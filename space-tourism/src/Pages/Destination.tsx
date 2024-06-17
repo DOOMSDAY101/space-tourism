@@ -51,11 +51,11 @@ const DestinationDetails: Option[] = [
 function Destination() {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
 
-  useEffect(() => {
+  useEffect((): void => {
     setSelectedOption(DestinationDetails[0]);
   }, []);
 
-  const handleOptionClick = (option: Option) => {
+  const handleOptionClick = (option: Option): void => {
     setSelectedOption(option);
   };
   return (

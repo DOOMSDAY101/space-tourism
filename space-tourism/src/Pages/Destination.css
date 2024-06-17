@@ -83,6 +83,7 @@
   margin-bottom: 10px;
 }
 .options-desc {
+  font-family: "barlow";
   width: 350px;
   line-height: 22px;
   color: #d0d6f9;
@@ -202,6 +203,9 @@
 }
 
 @media screen and (max-width: 430px) {
+  .destinaton-page {
+    background-image: url("../Images/assets/destination/background-destination-mobile.jpg");
+  }
   .image-destination {
     width: 140px;
     height: 140px;
@@ -224,7 +228,7 @@
     line-height: 20px;
     color: #d0d6f9;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
   }
   .distance-duration {
@@ -244,8 +248,5 @@
     font-family: "Bellefair";
     font-weight: 100;
     font-size: 23px;
-  }
-  .destinaton-page {
-    background-image: url("../Images/assets/destination/background-destination-mobile.jpg");
   }
 }
