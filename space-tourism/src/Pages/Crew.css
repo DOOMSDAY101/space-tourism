@@ -135,6 +135,12 @@
   .crew-page {
     background-image: url("../Images/assets/crew/background-crew-mobile.jpg");
   }
+  .crew {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .image-section img {
     max-width: 220px;
     height: 220px;
