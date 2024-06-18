@@ -51,7 +51,6 @@ function Crew() {
   };
 
   const selectedOption = CrewDetails[selectedOptionIndex];
-  console.log(selectedOption);
   return (
     <div className="crew-page">
       <NavBar />
