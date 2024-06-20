@@ -136,7 +136,7 @@
     background-image: url("../Images/assets/crew/background-crew-mobile.jpg");
   }
   .crew {
-    padding: 20px 0 0 0;
+    padding: 20px 0 0px 0;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -146,6 +146,7 @@ body {
     max-width: 300px;
   }
   .text-travel-1 {
+    margin-bottom: 15px;
     font-size: 14px;
   }
   .text-travel-2 {
@@ -153,6 +154,7 @@ body {
   }
   .text-travel-h1 {
     font-size: 75px;
+    margin-bottom: 15px;
   }
   .explore {
     width: 130px;
