@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/DOOMSDAY101/space-tourism)
-- Live Site URL: [Add live site URL here](https://ifeoluwa-space-toursim.netlify.app)
+- Live Site URL: [Add live site URL here](https://space-tourism-bay-two.vercel.app/)
 
 ## My process
 
